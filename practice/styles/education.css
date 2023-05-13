@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(254, 154, 204);
+    text-align: center;
+    margin: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: white;
+}
+
+#quote1{
+    color: white;
+}
+
+img {
+    width: 200px;
+}
+
+ol{
+    text-align: left;
+    font-weight: 650;
+}
+
+#quote2{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
