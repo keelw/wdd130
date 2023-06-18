@@ -68,7 +68,6 @@ nav a{
     grid-column: 2/3;
     grid-row: 1/2;
     justify-self: center;
-    align-self: bottom;
     color: whitesmoke;
     padding-top: 65px;
 }
@@ -263,9 +262,6 @@ footer .social img{
 .rivers-section h3{
     color:#6f7354;
     padding: 30px
-}
-.rivers-section img{
-    width: 40;
 }
 .rivers-subsection{
     display: grid;
