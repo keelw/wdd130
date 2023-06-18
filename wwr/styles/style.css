@@ -342,4 +342,7 @@ footer .social img{
     .rivers-subsection{
         display: block;
     }
+    .hero-msg-rivers h1{
+        padding-left: 50px;
+    }
 }
