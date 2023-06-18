@@ -1,0 +1,58 @@
+body{
+    background-color: black;
+    text-align: center;
+
+}
+
+#card{
+    margin: auto;
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+
+.hero-img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+h1{
+    font-weight: 1000;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    ;
+}
+
+h6{
+    color: rgba(16, 116, 184, 0.925);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 35px;
+    font-size: 18px;
+}
+
+#bottom-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(16, 116, 184, 0.925);
+    color: whitesmoke;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.read-tab{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.views-tab{
+    grid-column: 2;
+}
+
+.comments-tab{
+    grid-column: 3;
+}
