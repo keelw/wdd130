@@ -281,10 +281,10 @@ footer .social img{
     padding-left: 100px;
     padding-right: 100px;
 }
-#rivers-item-left h3{
+.rivers-item-left h3{
     text-align: left;
 }
-#rivers-item-right h3{
+.rivers-item-right h3{
     text-align: right;
 }
 #rivers-section .button-box .book{
