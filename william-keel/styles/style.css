@@ -201,8 +201,109 @@ footer p {
 }
 
 
+/*Resume page specific CSS*/
+#education {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 125px
+}
 
+#education h2 {
+    text-decoration: underline;
+}
 
+h3 {
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+#skills {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 100px;
+}
+
+#skills ul {
+    list-style-type: none;
+    line-height: 40px;
+}
+
+.unchecked {
+    color: #000000;
+  }
+
+#accomplishments {
+    background-color: #FFFFFF;
+    color:#000000;
+    padding: 50px;
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 100px
+}
+
+#accomplishments ul {
+    line-height: 40px;
+    list-style-type: none;
+}
+
+h4 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h5 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.panel ul {
+   line-height: 30px; 
+   font-family: "DM Sans", "Helvetica", "sans-serif";
+   padding: 20px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+  
+  .accordion {
+    background-color: #FFFFFF;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    font-family: 'Julius Sans One', sans-serif;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #000000;
+    font-weight: bold;
+    padding: 30px;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
 
 @media screen and (max-width: 900px) {
     #tri-fold-grid, .card {
