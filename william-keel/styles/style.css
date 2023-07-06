@@ -223,12 +223,21 @@ h3 {
     background-color: #000000;
     color: #FFFFFF;
     font-family: 'Julius Sans One', sans-serif;
-    padding: 100px;
+    padding: 75px;
 }
 
 #skills ul {
     list-style-type: none;
     line-height: 40px;
+}
+
+#skills table {
+    width: 100%;
+    line-height: 40px;
+}
+
+#skills th {
+    text-align: left;
 }
 
 .unchecked {
@@ -352,4 +361,16 @@ h5 {
     #hero-msg-rivers h1{
         padding-left: 50px;
     }
+
+    #skills {
+        background-color: #000000;
+        color: #FFFFFF;
+        font-family: 'Julius Sans One', sans-serif;
+    }
+
+    #skills table {
+        width: 100%;
+        line-height: 20px;
+    }
+    
 }
