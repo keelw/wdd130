@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Keel | My Website | Home</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/Optimized-site-logo.jpg"
+                alt="WK">
+            </a> 
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="about-me.html">About Me</a>
+                <a href="contact-me.html">Contact Me</a>
+            </nav>    
+        </header>
+        <main>
+            <h1 id="contact-me-title">Contact Me</h1>
+            <div id="feedback">
+            </div>
+            <form action="/contact-me" method="post">
+                <ul>
+                    <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" />
+                    </li>
+                    <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" />
+                    </li>
+                    <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ul>
+            </form>
+        </main>
+        <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById('feedback');
+            // get the form so we can read what was entered in it.
+            const formElement = document.forms[0];
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener('submit', function(e) {
+                // stop the form from doing the default action.
+                e.preventDefault();
+                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+                // make the feedback element visible.
+                feedbackElement.style.display = "block";
+                // add a class to move everything down so our message doesn't cover it.
+                document.body.classList.toggle('moveDown');
+            });
+        </script>
+        <footer>
+            <p>WK &copy; 2023 - William Keel</p>
+            <p><a class="link" href="site-plan.html">Site Plan</a></p>
+            <p><a class ="link" href="contact-me.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.jpg" alt="fb icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.jpg" alt="instagram icon">
+                </a>
+                <a href="https://www.linkedin.com/in/william-k-j/" target="_blank">
+                    <img src="images/linkedIn2jpg.jpg" alt="linkedIn icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
